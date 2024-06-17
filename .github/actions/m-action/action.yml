@@ -1,0 +1,11 @@
+name: 'My Custom Action'
+description: 'This action prints "Hello, World!"'
+author: 'mcritic'
+inputs:
+  who-to-greet:
+    description: 'The name of the person to greet'
+    required: false
+    default: 'World'
+runs:
+  using: 'node16'
+  main: 'index.js'
