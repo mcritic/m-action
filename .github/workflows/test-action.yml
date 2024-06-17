@@ -1,0 +1,17 @@
+# .github/workflows/test-action.yml
+name: Test My Custom Action
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run my custom action
+        uses: ./.github/actions/m-action
+        with:
+          who-to-greet: 'GitHub User'
