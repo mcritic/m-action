@@ -1,6 +1,6 @@
 # My Custom GitHub Action
 
-![Build](https://github.com/mcritic/m-action/actions/workflows/test-action.yml/badge.svg)
+![Build](https://github.com/mcritic/m-actions/actions/workflows/test-action.yml/badge.svg)
 
 ## Description
 
@@ -30,7 +30,7 @@ jobs:
 
     - name: Use Custom Action from External Repo
       id: custom-action
-      uses: mcritic/m-action/.github/actions/m-action@v1.0.0
+      uses: mcritic/m-actions/.github/actions/m-action@v1.0.0
       with:
         who-to-greet: 'External GitHub User'
 
@@ -43,7 +43,7 @@ jobs:
 # Outputs
 **time**: The current time.
 # Result
-![image](https://github.com/mcritic/m-action/assets/11994240/c4a5d190-04ad-4d56-a669-06cb7afffb1f)
+![image](https://github.com/mcritic/m-actions/assets/11994240/c4a5d190-04ad-4d56-a669-06cb7afffb1f)
 
 
 # License
