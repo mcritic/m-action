@@ -18,6 +18,10 @@ jobs:
         uses: docker/setup-buildx-action@v1
 
       - name: Run Docker action
+        id: docker-action
         uses: ./.github/actions/docker-action
         with:
           who-to-greet: 'GitHub User'
+
+      - name: Get the output from Docker action
+        run: echo "Hello, ${{ steps.docker-action.outputs.who-to-greet }}! The time from Docker action was ${{ steps.docker-action.outputs.time }}"
