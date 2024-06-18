@@ -46,7 +46,8 @@ jobs:
 # Outputs
 **time**: The current time.
 # Result
-![image](https://github.com/mcritic/m-actions/assets/11994240/7719d452-6d7b-4670-a51c-d6585a13a532)
+![image](https://github.com/mcritic/m-actions/assets/11994240/6f0a0ca6-0ef2-40df-847f-7e4587d827a0)
+
 
 ### Docker Example Usage
 
@@ -87,7 +88,8 @@ jobs:
 # Outputs
 **time**: The current time.
 # Result
-![image](https://github.com/mcritic/m-actions/assets/11994240/725865f3-b031-4dbe-a459-e9ffc3a8060e)
+![image](https://github.com/mcritic/m-actions/assets/11994240/ba95730a-fdc5-4bc2-998e-bf3577151879)
+
 
 
 # License
