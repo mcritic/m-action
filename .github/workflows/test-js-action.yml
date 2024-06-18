@@ -1,9 +1,10 @@
-name: Use External Custom Action
+name: JS Action Example
 
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   example:
@@ -15,7 +16,7 @@ jobs:
 
     - name: Use Custom Action from External Repo
       id: custom-action
-      uses: mcritic/m-action/.github/actions/m-action@v1.0.0
+      uses: mcritic/m-actions/.github/actions/js-action@v1.0.0
       with:
         who-to-greet: 'External GitHub User'
 

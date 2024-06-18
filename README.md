@@ -1,6 +1,6 @@
 # My Custom GitHub Action
 
-![Build](https://github.com/mcritic/m-actions/actions/workflows/test-action.yml/badge.svg)
+![Build](https://github.com/mcritic/m-actions/actions/workflows/test-js-action.yml/badge.svg)
 
 ## Description
 
@@ -10,7 +10,7 @@
 
 ### Example Usage
 
-Create a workflow file in your repository, for example, `.github/workflows/use-external-action.yml`, and add the following code:
+Create a workflow file in your repository, for example, `.github/workflows/use-external-js-action.yml`, and add the following code:
 
 ```yaml
 name: Use External Custom Action
@@ -30,7 +30,7 @@ jobs:
 
     - name: Use Custom Action from External Repo
       id: custom-action
-      uses: mcritic/m-actions/.github/actions/m-action@v1.0.0
+      uses: mcritic/m-actions/.github/actions/js-action@v1.0.0
       with:
         who-to-greet: 'External GitHub User'
 
@@ -47,4 +47,4 @@ jobs:
 
 
 # License
-This project is licensed under the [MIT License](https://github.com/mcritic/m-action/blob/main/LICENSE).
+This project is licensed under the [MIT License](https://github.com/mcritic/m-actions/blob/main/LICENSE).

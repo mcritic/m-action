@@ -1,0 +1,19 @@
+name: 'Docker Action'
+description: 'Run a Docker container with a greeting message and current time.'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ github.actor }}
+  entrypoint: /entrypoint.sh
+
+inputs:
+  who-to-greet:
+    description: 'The name of the person to greet.'
+    required: true
+    default: 'GitHub User'
+
+outputs:
+  time:
+    description: 'The current time.'

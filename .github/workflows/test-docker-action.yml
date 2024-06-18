@@ -1,0 +1,23 @@
+name: Docker Action Example
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Run Docker action
+        uses: mcritic/m-actions/.github/actions/docker-action@v1.1.0
+        with:
+          who-to-greet: 'GitHub User'
