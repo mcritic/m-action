@@ -42,6 +42,9 @@ jobs:
 **who-to-greet**: The name of the person to greet. Default: World.
 # Outputs
 **time**: The current time.
+# Result
+![image](https://github.com/mcritic/m-action/assets/11994240/c4a5d190-04ad-4d56-a669-06cb7afffb1f)
+
 
 # License
 This project is licensed under the [MIT License](https://github.com/mcritic/m-action/blob/main/LICENSE).
