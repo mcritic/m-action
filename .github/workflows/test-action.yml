@@ -1,17 +1,23 @@
-# .github/workflows/test-action.yml
-name: Test My Custom Action
+name: Use External Custom Action
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  test:
+  example:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-      - name: Run my custom action
-        uses: ./.github/actions/m-action
-        with:
-          who-to-greet: 'GitHub User'
+    - name: Use Custom Action from External Repo
+      id: custom-action
+      uses: mcritic/m-action/.github/actions/m-action@v1.0.0
+      with:
+        who-to-greet: 'External GitHub User'
+
+    - name: Print the Time
+      run: echo "The current time is ${{ steps.custom-action.outputs.time }}"
