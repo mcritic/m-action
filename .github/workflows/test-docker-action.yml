@@ -18,6 +18,6 @@ jobs:
         uses: docker/setup-buildx-action@v1
 
       - name: Run Docker action
-        uses: mcritic/m-actions/.github/actions/docker-action@v1.1.0
+        uses: ./.github/actions/docker-action
         with:
           who-to-greet: 'GitHub User'

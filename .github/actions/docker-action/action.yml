@@ -5,7 +5,7 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ github.actor }}
+    - ${{ inputs.who-to-greet }}
   entrypoint: /entrypoint.sh
 
 inputs:
