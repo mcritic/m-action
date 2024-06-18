@@ -16,7 +16,7 @@ jobs:
 
     - name: Use Custom Action from External Repo
       id: custom-action
-      uses: mcritic/m-actions/.github/actions/js-action@v1.0.0
+      uses: mcritic/m-actions/.github/actions/js-action@v1.1.0
       with:
         who-to-greet: 'External GitHub User'
 
