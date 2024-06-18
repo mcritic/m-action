@@ -15,5 +15,7 @@ inputs:
     default: 'GitHub User'
 
 outputs:
+  who-to-greet:
+    description: 'The name of the person greeted.'
   time:
     description: 'The current time.'
